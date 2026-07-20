@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NP Fitness | Elite Nutrition &amp; Performance Suite</title>
+  <link rel="stylesheet" href="NP%20Fitness%20_%20Elite%20Nutrition%20&amp;%20Performance%20Suite_files/style_fi-i.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="NP%20Fitness%20_%20Elite%20Nutrition%20&amp;%20Performance%20Suite_files/all.min_fi-i.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="NP%20Fitness%20_%20Elite%20Nutrition%20&amp;%20Performance%20Suite_files/css2_fi-i.css" rel="stylesheet">
+</head>
+<body class="dark-theme">
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">NP <span>FITNESS</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#nutrition" class="nav-item">Nutrition DB</a>
+        <a href="#calculators" class="nav-item">Calculators</a>
+        <a href="#planner" class="nav-item">Meal Planner</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-btn" aria-label="Toggle Theme"><i class="fa-solid fa-sun"></i></button>
+        <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Home Page & Hero Banner -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">ELEVATE YOUR PHYSIQUE</span>
+      <h1>ENGINEER YOUR <span>FITNESS</span></h1>
+      <p>Precision nutrition tracking, scientific calorie metrics, and tailored daily planning designed to hit your goals.</p>
+      <div class="hero-btns">
+        <a href="#calculators" class="btn btn-primary">Start Calculating <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#nutrition" class="btn btn-secondary">Explore Foods</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Motivational Banner -->
+  <div class="ticker-banner">
+    <div class="ticker-content">
+      <span><i class="fa-solid fa-bolt"></i> NO EXCUSES</span>
+      <span><i class="fa-solid fa-dumbbell"></i> CONSISTENCY IS KEY</span>
+      <span><i class="fa-solid fa-fire"></i> FUEL YOUR AMBITION</span>
+      <span><i class="fa-solid fa-bullseye"></i> TRACK EVERY MACRO</span>
+      <span><i class="fa-solid fa-bolt"></i> NO EXCUSES</span>
+      <span><i class="fa-solid fa-dumbbell"></i> CONSISTENCY IS KEY</span>
+    </div>
+  </div>
+
+  <main class="main-container">
+
+    <!-- Section 2 & 3: Nutrition Database (Veg & Non-Veg) -->
+    <section id="nutrition" class="section-padding">
+      <div class="section-header text-center">
+        <h2>Nutrition <span>Database</span></h2>
+        <p>Macro &amp; micronutrient breakdowns per 100g serving</p>
+      </div>
+
+      <div class="db-controls">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="foodSearchInput" placeholder="Search foods (e.g., Paneer, Chicken, Oats)...">
+        </div>
+        <div class="category-tabs">
+          <button class="tab-btn active" data-category="all">All Foods</button>
+          <button class="tab-btn" data-category="veg">Vegetarian</button>
+          <button class="tab-btn" data-category="non-veg">Non-Vegetarian</button>
+        </div>
+      </div>
+
+      <div id="foodGrid" class="cards-grid"><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Paneer</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">265 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">18.3 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">1.2 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">20.8 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Soya Chunks</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">345 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">52 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">33 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">0.5 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">13 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Whole Milk</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">62 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">3.2 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">4.8 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">3.6 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Curd (Dahi)</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">98 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">11 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">3.4 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">4.3 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Rolled Oats</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">389 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">16.9 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">66.3 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">6.9 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">10.6 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Peanuts</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">567 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">25.8 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">16.1 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">49.2 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">8.5 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Chickpeas (Chana)</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">364 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">19 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">61 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">6 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">17 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Rajma (Kidney Beans)</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">333 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">24 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">60 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">0.8 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">25 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Moong Dal</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">347 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">24 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">63 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">1.2 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">16 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Almonds</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">579 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">21.2 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">21.6 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">49.9 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">12.5 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Banana</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">89 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">1.1 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">22.8 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">0.3 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">2.6 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Apple</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">52 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">0.3 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">13.8 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">0.2 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">2.4 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>White Rice (Cooked)</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">130 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">2.7 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">28 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">0.3 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0.4 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Wheat Roti</h3>
+          <span class="tag veg">Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">264 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">9 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">54 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">1.5 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">11 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Chicken Breast</h3>
+          <span class="tag non-veg">Non-Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">165 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">31 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">0 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">3.6 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Whole Egg</h3>
+          <span class="tag non-veg">Non-Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">155 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">13 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">1.1 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">11 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Fish (Rohu/Salmon)</h3>
+          <span class="tag non-veg">Non-Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">206 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">22 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">0 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">12 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Mutton (Lean)</h3>
+          <span class="tag non-veg">Non-Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">294 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">25 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">0 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">21 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Prawns</h3>
+          <span class="tag non-veg">Non-Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">99 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">24 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">0.2 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">0.3 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Tuna</h3>
+          <span class="tag non-veg">Non-Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">132 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">28 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">0 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">1.3 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div><div class="card food-card">
+      <div>
+        <div class="food-header">
+          <h3>Turkey Breast</h3>
+          <span class="tag non-veg">Non-Veg</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item"><span class="label">Calories</span><span class="val">135 kcal</span></div>
+          <div class="macro-item"><span class="label">Protein</span><span class="val">30 g</span></div>
+          <div class="macro-item"><span class="label">Carbohydrates</span><span class="val">0 g</span></div>
+          <div class="macro-item"><span class="label">Fats</span><span class="val">0.7 g</span></div>
+          <div class="macro-item"><span class="label">Dietary Fiber</span><span class="val">0 g</span></div>
+        </div>
+      </div>
+    </div></div>
+    </section>
+
+    <!-- Section 4, 5, 6, 7, 8: Fitness Calculators Suite -->
+    <section id="calculators" class="section-padding bg-alt">
+      <div class="section-header text-center">
+        <h2>Performance <span>Calculators</span></h2>
+        <p>Data-driven fitness metrics tailored to your biometric profile</p>
+      </div>
+
+      <div class="calc-grid">
+        
+        <!-- Food Portions Calculator -->
+        <div class="card calc-card">
+          <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Food Portion Calculator</h3>
+          <p class="card-desc">Calculate macros for custom food quantities</p>
+          <form id="foodCalcForm">
+            <div class="form-group">
+              <label for="foodSelect">Select Food Item</label>
+              <select id="foodSelect" required=""><option value="p1" selected="selected">Paneer (Veg)</option><option value="p2">Soya Chunks (Veg)</option><option value="p3">Whole Milk (Veg)</option><option value="p4">Curd (Dahi) (Veg)</option><option value="p5">Rolled Oats (Veg)</option><option value="p6">Peanuts (Veg)</option><option value="p7">Chickpeas (Chana) (Veg)</option><option value="p8">Rajma (Kidney Beans) (Veg)</option><option value="p9">Moong Dal (Veg)</option><option value="p10">Almonds (Veg)</option><option value="p11">Banana (Veg)</option><option value="p12">Apple (Veg)</option><option value="p13">White Rice (Cooked) (Veg)</option><option value="p14">Wheat Roti (Veg)</option><option value="p15">Chicken Breast (Non-Veg)</option><option value="p16">Whole Egg (Non-Veg)</option><option value="p17">Fish (Rohu/Salmon) (Non-Veg)</option><option value="p18">Mutton (Lean) (Non-Veg)</option><option value="p19">Prawns (Non-Veg)</option><option value="p20">Tuna (Non-Veg)</option><option value="p21">Turkey Breast (Non-Veg)</option></select>
+            </div>
+            <div class="form-group">
+              <label for="foodGramInput">Quantity (Grams)</label>
+              <input type="number" id="foodGramInput" placeholder="e.g. 250" min="1" required="">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate Macros</button>
+          </form>
+          <div id="foodCalcResult" class="calc-results hidden"></div>
+        </div>
+
+        <!-- Target Nutrition Calculator -->
+        <div class="card calc-card">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Daily Target Macros</h3>
+          <p class="card-desc">Est. daily macro requirements based on body weight</p>
+          <form id="macroTargetForm">
+            <div class="form-group">
+              <label for="targetWeight">Body Weight (kg)</label>
+              <input type="number" id="targetWeight" placeholder="e.g. 75" min="20" required="">
+            </div>
+            <div class="form-group">
+              <label for="fitnessGoal">Primary Goal</label>
+              <select id="fitnessGoal" required="">
+                <option value="loss" selected="selected">Weight Loss (Caloric Deficit)</option>
+                <option value="maintenance">Maintenance</option>
+                <option value="gain">Muscle Gain (Caloric Surplus)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Get Target Macros</button>
+          </form>
+          <div id="macroTargetResult" class="calc-results hidden"></div>
+        </div>
+
+        <!-- BMR & TDEE Calculator -->
+        <div class="card calc-card">
+          <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+          <h3>BMR &amp; TDEE Calculator</h3>
+          <p class="card-desc">Basal metabolic rate and total daily energy expenditure</p>
+          <form id="bmrForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bmrAge">Age</label>
+                <input type="number" id="bmrAge" placeholder="25" min="10" max="100" required="">
+              </div>
+              <div class="form-group">
+                <label for="bmrGender">Gender</label>
+                <select id="bmrGender" required="">
+                  <option value="male" selected="selected">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bmrWeight">Weight (kg)</label>
+                <input type="number" id="bmrWeight" placeholder="70" min="30" required="">
+              </div>
+              <div class="form-group">
+                <label for="bmrHeight">Height (cm)</label>
+                <input type="number" id="bmrHeight" placeholder="175" min="100" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="bmrActivity">Activity Level</label>
+              <select id="bmrActivity" required="">
+                <option value="1.2" selected="selected">Sedentary (Little or no exercise)</option>
+                <option value="1.375">Lightly Active (1-3 days/wk)</option>
+                <option value="1.55">Moderately Active (3-5 days/wk)</option>
+                <option value="1.725">Very Active (6-7 days/wk)</option>
+                <option value="1.9">Extra Active (Hard training/job)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate Rates</button>
+          </form>
+          <div id="bmrResult" class="calc-results hidden"></div>
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="card calc-card">
+          <div class="card-icon"><i class="fa-solid fa-weight-scale"></i></div>
+          <h3>BMI Calculator</h3>
+          <p class="card-desc">Calculate Body Mass Index &amp; body composition status</p>
+          <form id="bmiForm">
+            <div class="form-group">
+              <label for="bmiWeight">Weight (kg)</label>
+              <input type="number" id="bmiWeight" placeholder="e.g. 70" step="0.1" required="">
+            </div>
+            <div class="form-group">
+              <label for="bmiHeight">Height (cm)</label>
+              <input type="number" id="bmiHeight" placeholder="e.g. 175" step="0.1" required="">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate BMI</button>
+          </form>
+          <div id="bmiResult" class="calc-results hidden"></div>
+        </div>
+
+        <!-- Daily Water Hydration Calculator -->
+        <div class="card calc-card">
+          <div class="card-icon"><i class="fa-solid fa-glass-water"></i></div>
+          <h3>Daily Water Hydration</h3>
+          <p class="card-desc">Optimal daily fluid intake based on weight &amp; sweat rate</p>
+          <form id="waterForm">
+            <div class="form-group">
+              <label for="waterWeight">Body Weight (kg)</label>
+              <input type="number" id="waterWeight" placeholder="e.g. 70" required="">
+            </div>
+            <div class="form-group">
+              <label for="waterActivity">Daily Exercise (Minutes)</label>
+              <input type="number" id="waterActivity" placeholder="e.g. 45" value="30" required="">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calculate Intake</button>
+          </form>
+          <div id="waterResult" class="calc-results hidden"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 9: Daily Meal Planner -->
+    <section id="planner" class="section-padding">
+      <div class="section-header text-center">
+        <h2>Daily Meal <span>Planner</span></h2>
+        <p>Build custom meals and track running totals against your daily goals</p>
+      </div>
+
+      <div class="planner-wrapper">
+        <div class="planner-form-card card">
+          <h3><i class="fa-solid fa-plus"></i> Add Item to Plan</h3>
+          <form id="mealPlannerForm">
+            <div class="form-group">
+              <label for="plannerMealType">Meal Category</label>
+              <select id="plannerMealType">
+                <option value="Breakfast" selected="selected">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Snack">Snack</option>
+                <option value="Dinner">Dinner</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="plannerFoodSelect">Food Item</label>
+              <select id="plannerFoodSelect" required=""><option value="p1" selected="selected">Paneer (Veg)</option><option value="p2">Soya Chunks (Veg)</option><option value="p3">Whole Milk (Veg)</option><option value="p4">Curd (Dahi) (Veg)</option><option value="p5">Rolled Oats (Veg)</option><option value="p6">Peanuts (Veg)</option><option value="p7">Chickpeas (Chana) (Veg)</option><option value="p8">Rajma (Kidney Beans) (Veg)</option><option value="p9">Moong Dal (Veg)</option><option value="p10">Almonds (Veg)</option><option value="p11">Banana (Veg)</option><option value="p12">Apple (Veg)</option><option value="p13">White Rice (Cooked) (Veg)</option><option value="p14">Wheat Roti (Veg)</option><option value="p15">Chicken Breast (Non-Veg)</option><option value="p16">Whole Egg (Non-Veg)</option><option value="p17">Fish (Rohu/Salmon) (Non-Veg)</option><option value="p18">Mutton (Lean) (Non-Veg)</option><option value="p19">Prawns (Non-Veg)</option><option value="p20">Tuna (Non-Veg)</option><option value="p21">Turkey Breast (Non-Veg)</option></select>
+            </div>
+            <div class="form-group">
+              <label for="plannerGrams">Quantity (Grams)</label>
+              <input type="number" id="plannerGrams" placeholder="100" min="1" required="">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Add to Schedule</button>
+          </form>
+        </div>
+
+        <div class="planner-display-card card">
+          <div class="planner-header">
+            <h3><i class="fa-solid fa-calendar-day"></i> Today's Schedule</h3>
+            <button id="clearPlannerBtn" class="btn btn-sm btn-danger">Clear All</button>
+          </div>
+
+          <div id="mealList" class="meal-list-container">
+            <p class="empty-msg">No meals added yet. Start constructing your diet schedule!</p>
+          </div>
+
+          <div class="planner-summary">
+            <h4>Total Daily Nutrients</h4>
+            <div class="summary-grid">
+              <div class="sum-box">
+                <span class="sum-title">Calories</span>
+                <span id="sumCals" class="sum-val">0 kcal</span>
+              </div>
+              <div class="sum-box">
+                <span class="sum-title">Protein</span>
+                <span id="sumProtein" class="sum-val">0 g</span>
+              </div>
+              <div class="sum-box">
+                <span class="sum-title">Carbs</span>
+                <span id="sumCarbs" class="sum-val">0 g</span>
+              </div>
+              <div class="sum-box">
+                <span class="sum-title">Fat</span>
+                <span id="sumFat" class="sum-val">0 g</span>
+              </div>
+              <div class="sum-box">
+                <span class="sum-title">Fiber</span>
+                <span id="sumFiber" class="sum-val">0 g</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 12: About NP Fitness -->
+    <section id="about" class="section-padding bg-alt">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>About <span>NP Fitness</span></h2>
+          <p class="lead">Built on precision, performance, and uncompromising dedication to results.</p>
+          <p>NP Fitness is an advanced digital fitness platform designed
+ to provide clean, accurate, and accessible nutrition data and physical 
+metrics. Whether you're tracking daily macros, optimizing powerlifting 
+phases, or structuring lean mass gains, NP Fitness provides the core 
+computational tools needed to turn targets into reality.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <i class="fa-solid fa-check-double"></i>
+              <h4>100% Verified</h4>
+              <p>Standardized nutritional metrics per 100g serving</p>
+            </div>
+            <div class="stat-item">
+              <i class="fa-solid fa-calculator"></i>
+              <h4>Precision Math</h4>
+              <p>Mifflin-St Jeor &amp; macro equations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 11: Contact Page -->
+    <section id="contact" class="section-padding">
+      <div class="section-header text-center">
+        <h2>Get In <span>Touch</span></h2>
+        <p>Have questions or feedback? Drop us a message.</p>
+      </div>
+
+      <div class="contact-wrapper card">
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" placeholder="Your Name" required="">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" placeholder="name@example.com" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" placeholder="e.g. Coaching / Feedback" required="">
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required=""></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div id="contactStatus" class="contact-status hidden"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="#home" class="logo">NP <span>FITNESS</span></a>
+        <p>Empowering natural athletes with data-driven nutritional guidance and fitness computation.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#nutrition">Nutrition DB</a></li>
+          <li><a href="#calculators">Calculators</a></li>
+          <li><a href="#planner">Meal Planner</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NP Fitness. All Rights Reserved. Engineered for Performance.</p>
+    </div>
+  </footer>
+
+  <script src="NP%20Fitness%20_%20Elite%20Nutrition%20&amp;%20Performance%20Suite_files/script_fi-i.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
